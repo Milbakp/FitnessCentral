@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
             FitnessCentral
         </title>
@@ -8,18 +9,43 @@
     </head>
     <body>
         <nav> 
-            <h1><a href="index.html">Home</a></h1>
-            <span id="navtext" style="margin-right: 50%;"><a href="strengthTraining.html">Exercise</a></span>
-                <span id="navtext"><a href="diets.html"> Diets</a></span>
+            <h1><a id="home" href="index.html">Home</a></h1>
+            <span class="dropdown"  style="margin-right: 50%;">
+                <span id="navtext">Exercise</span>
+                <div class="dropdown-content">
+                    <a href="strengthTraining.html">Strength Training</a>
+                    <a href="cardio.html">Cardio</a>
+                    <a href="strech.html">Streching</a>
+                </div>
+            </span>
+            <span class="dropdown">
+                <span id="navtext">Diet</span>
+                <div class="dropdown-content">
+                    <a href="diets.html"> Healty diet</a>
+                    <a href="caloryCal.html">Calory Calculator</a>
+                    <a href="dietList.html">Diets</a>
+                </div>
+            </span>
+            <div style="height: 5px; background-color: white;"></div>
         </nav>
-        <div class="bigSize" style="background-color:aqua">
-            <h1 class="animation">Welcome to FitnessCentral 
+        <div class="bigSize" style="height: 40vw;">
+            <h1 class="animation" style="margin-top: 200px;">Welcome to FitnessCentral 
                 <br>
                 Home to the best health advise</h1>
         </div>
-        <div class="bigSize" style="background-color:orange; height: 300px;">
-            <h1>Importance of fitness</h1>
-        </div>
+        <div style="height: 5px; background-color: white;"></div>
+        <br>
+        <div  class="row" style="height: 600px;">
+            <div class="column"style="overflow: auto;"> 
+                <img id="gymCouple" src="https://cdn.pixabay.com/photo/2022/09/06/21/37/couple-7437534__480.jpg" alt="gym couple">
+            </div>
+            <div class="column">
+                <div class="whitebox">
+                    <h1 class="bigSize">Why is fitness important?</h1>
+                    <h2> In an age of slouching our backs to computer</h2>
+                </div>
+            </div>
+        </div>    
         <div class="bigSize" style="background-color:pink; height: 300px;">
             <h1>Exercising </h1>
         </div>

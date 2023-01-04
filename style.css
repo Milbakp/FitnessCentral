@@ -1,20 +1,23 @@
+/* Elements */
 body{
+    color: white;
+    background-color: black;
     text-align: center;
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
 }
 a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
-
-#navtext{
-    font-size: 50px;
+span{
+    color: white;
 }
-
-.bigSize{
-    font-size: 40px;
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 nav{
@@ -25,11 +28,45 @@ h1{
     margin-top: 0;
     margin-bottom: 0;
 }
+/* Ids */
+#navtext{
+    font-size: 50px;
+}
 
+#gymCouple{
+    width: 70%;
+    border-radius: 100px;
+    overflow: auto;
+}
+
+#home{
+    color: white;
+}
+
+/* classes */
+.bigSize{
+    font-size: 4vw;
+}
+
+.whitebox{
+    border: solid white 2px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.column {
+    flex: 50%;
+    width: 50%;
+    padding: 10px;
+  }
+
+.row{
+    display: flex
+  }
 /* Fade in animation*/
 .animation{
-    -webkit-animation: fadein 2s;
-    animation: fadein 2s;
+    -webkit-animation: fadein 3s;
+    animation: fadein 3s;
 }
 @keyframes fadein {
     from { opacity: 0; }
@@ -39,3 +76,34 @@ h1{
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+/*Drop down menu*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    font-size: 20px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: black;
+    color: white;
+    }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

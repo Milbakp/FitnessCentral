@@ -6,8 +6,24 @@
     <link rel="stylesheet" href="style.css">
     <body>
         <nav> 
-            <h1><a href="index.html">Home</a></h1>
-            <span><a href="strengthTraining.html">Exercise</a> <a href="diets.html"> Diets</a></span>
+            <h1><a id="home" href="index.html">Home</a></h1>
+            <span class="dropdown"  style="margin-right: 50%;">
+                <span id="navtext">Exercise</span>
+                <div class="dropdown-content">
+                    <a href="strengthTraining.html">Strength Training</a>
+                    <a href="cardio.html">Cardio</a>
+                    <a href="strech.html">Streching</a>
+                </div>
+            </span>
+            <span class="dropdown">
+                <span id="navtext">Diet</span>
+                <div class="dropdown-content">
+                    <a href="diets.html"> Healty diet</a>
+                    <a href="caloryCal.html">Calory Calculator</a>
+                    <a href="dietList.html">Diets</a>
+                </div>
+            </span>
+            <div style="height: 5px; background-color: white;"></div>
         </nav>
         testing
     </body>
