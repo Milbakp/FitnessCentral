@@ -43,6 +43,10 @@ h1{
     color: white;
 }
 
+#boxText{
+    font-size: 2vw;
+}
+
 /* classes */
 .bigSize{
     font-size: 4vw;
