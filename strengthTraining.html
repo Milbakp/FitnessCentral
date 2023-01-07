@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Fitness Central</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fitness Central - Strength Training</title>
     </head>
     <link rel="stylesheet" href="style.css">
     <body>
         <nav> 
             <h1><a id="home" href="index.html">Home</a></h1>
-            <span class="dropdown"  style="margin-right: 50%;">
-                <span id="navtext">Exercise</span>
-                <div class="dropdown-content">
-                    <a href="strengthTraining.html">Strength Training</a>
-                    <a href="cardio.html">Cardio</a>
-                    <a href="strech.html">Streching</a>
-                </div>
-            </span>
-            <span class="dropdown">
-                <span id="navtext">Diet</span>
-                <div class="dropdown-content">
-                    <a href="diets.html"> Healty diet</a>
-                    <a href="caloryCal.html">Calory Calculator</a>
-                    <a href="dietList.html">Diets</a>
-                </div>
-            </span>
-            <div style="height: 5px; background-color: white;"></div>
+            <div class="row">
+                <span class="column">
+                    <div class="dropdown">
+                        <span id="navtext">Exercise</span>
+                        <div class="dropdown-content">
+                            <a href="strengthTraining.html">Strength Training</a>
+                            <a href="cardio.html">Cardio</a>
+                            <a href="strech.html">Streching</a>
+                        </div>
+                    </div>
+                </span>
+                <span class="column">
+                    <div class="dropdown">
+                    <span id="navtext">Diet</span>
+                        <div class="dropdown-content">
+                            <a href="diets.html"> Healty diet</a>
+                            <a href="caloryCal.html">Calory Calculator</a>
+                            <a href="dietList.html">Diets</a>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="whiteLine"></div>
         </nav>
-        testing
+        <br>
+        <div class="animation">
+            <img id="mainImage" src="benchpress.png" alt="Dude bench pressing">
+            <br>
+            <div class="whitebox">
+                <h1 id="boxSize">What is strenght training?</h1>
+            </div>
+        </div>
     </body>
 </html>

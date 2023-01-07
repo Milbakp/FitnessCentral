@@ -8,37 +8,47 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <!--This is the navigation bar-->
         <nav> 
             <h1><a id="home" href="index.html">Home</a></h1>
             <div class="row">
-                <span class="dropdown column">
-                    <span id="navtext">Exercise</span>
-                    <div class="dropdown-content">
-                        <a href="strengthTraining.html">Strength Training</a>
-                        <a href="cardio.html">Cardio</a>
-                        <a href="strech.html">Streching</a>
+                <span class="column">
+                    <div class="dropdown">
+                        <span id="navtext">Exercise</span>
+                        <div class="dropdown-content">
+                            <a href="strengthTraining.html">Strength Training</a>
+                            <a href="cardio.html">Cardio</a>
+                            <a href="strech.html">Streching</a>
+                        </div>
                     </div>
                 </span>
-                <span class="dropdown column">
+                <span class="column">
+                    <div class="dropdown">
                     <span id="navtext">Diet</span>
-                    <div class="dropdown-content">
-                        <a href="diets.html"> Healty diet</a>
-                        <a href="caloryCal.html">Calory Calculator</a>
-                        <a href="dietList.html">Diets</a>
+                        <div class="dropdown-content">
+                            <a href="diets.html"> Healty diet</a>
+                            <a href="caloryCal.html">Calory Calculator</a>
+                            <a href="dietList.html">Diets</a>
+                        </div>
                     </div>
                 </span>
             </div>
-            <div style="height: 5px; background-color: white;"></div>
+            <!-- Any div  with the class whiteLine is used to separate passages-->
+            <div class="whiteLine"></div>
         </nav>
-        <div class="bigSize" style="height: 40vw;">
-            <h1 class="animation" style="margin-top: 200px;">Welcome to FitnessCentral 
+        <!-- This is the title which welcomes people to the site. It uses a css animation-->
+        <div class="bigSize" id="welcome">
+            <h1 class="animation">
+                Welcome to FitnessCentral 
                 <br>
-                Home to the best health advise</h1>
+                Home to the best health advise
+            </h1>
         </div>
-        <div style="height: 5px; background-color: white;"></div>
+        <div class="whiteLine"></div>
         <br>
-        <div  class="row" style="height: 600px;">
-            <div class="column"style="overflow: auto;"> 
+        <!--A two column div separated into one part for images and another for text, -->
+        <div  class="row">
+            <div class="column"> 
                 <img id="gymCouple" src="https://cdn.pixabay.com/photo/2022/09/06/21/37/couple-7437534__480.jpg" alt="gym couple">
             </div>
             <div class="column">
@@ -47,12 +57,42 @@
                     <p id="boxText"> In an age of slouching our backs to computer</p>
                 </div>
             </div>
-        </div>    
-        <div class="bigSize" style="background-color:pink; height: 300px;">
-            <h1>Exercising </h1>
         </div>
-        <div class="bigSize" style="background-color:green; height: 300px;">
-            <h1>Dieting </h1>
+        <div class="whiteLine"></div>
+        <br>
+        <!--Exercising-->
+        <div  class="row" >
+            <div class="column">
+                <div class="whitebox">
+                    <h1 class="bigSize">Exercising</h1>
+                    <p id="boxText"> In an age of slouching our backs to computer</p>
+                </div>
+            </div>
+            <div class="column"> 
+                <img id="gymCouple" src="https://media.istockphoto.com/id/1366052585/photo/shot-of-a-group-of-friends-hanging-out-before-working-out-together.jpg?b=1&s=170667a&w=0&k=20&c=z5JTIJ3k0QgJCEMPpJQ_JvnGzN_izKQgJRB5YKHgFV0=" alt="people running">
+            </div>
         </div>
+        <div class="whiteLine"></div>
+        <br>
+        <!--Diet-->
+        <div class="row" >
+            <div class="column"> 
+                <img id="gymCouple" src="https://media.istockphoto.com/id/1329445526/photo/attractive-asian-woman-who-eats.jpg?b=1&s=170667a&w=0&k=20&c=x10BcCVvajorAxlpx0G9iHHEDAEgeGtVHTOFkIZ8pLs=" alt="Women eating">
+            </div>
+            <div class="column">
+                <div class="whitebox">
+                    <h1 class="bigSize">Dieting</h1>
+                    <p id="boxText"> In an age of slouching our backs to computer</p>
+                </div>
+            </div>
+            <div class="column"> 
+                <img id="gymCouple" src="https://media.istockphoto.com/id/1278668513/photo/young-girl-eating-fresh-green-vegetables-against-real-kitchen-background.jpg?b=1&s=170667a&w=0&k=20&c=UNU3yXQJA4r9soCVMpftshR6BBfQfRorvZDhqQsFoXI=" alt="child eating">
+            </div>
+        </div>
+        <!--Why not put a copyright symbol ;)-->
+        <footer id="boxText">
+            <p>© FitnessCentral 2023 Luqman. Fitness website<br>
+            Background <a href="https://www.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_11712558.htm#query=chalkboard%20texture&position=0&from_view=keyword">Image by benzoix</a> on Freepik</p>
+        </footer>       
     </body>
 </html>
