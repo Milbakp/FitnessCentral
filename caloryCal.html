@@ -14,11 +14,18 @@
                 let select = document.getElementById("activity");
                 let activeRate = select.options[select.selectedIndex].value
                 let amountCal = 0;
+                // No null values
+                if (weight === null || height === null || age === null || 
+                    (document.getElementById("male").checked == false && document.getElementById("female").checked == false)){
+                        document.getElementById("result").innerHTML = 'Please fill in all values!';
+                        return;
+                    }
                 // Makes sure no negative values are entered
                 if (weight < 0 || height < 0 || age < 0){
                     document.getElementById("result").innerHTML = "Positive values please! your not -5 years old!";
                     return;
                 }
+                // Calculations for male and female.
                 if (document.getElementById("male").checked == true){
                     amountCal = Math.round(activeRate * ((10 * weight) + (6.25 * height) - (5 * age) + 5))
                 }
