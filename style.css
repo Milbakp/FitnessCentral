@@ -49,43 +49,42 @@ ul{
     font-size: 4vw;
 }
 
-#gymCouple{
-    width: 90%;
-    border-radius: 80px;
-    overflow: auto;
-}
-
 #home{
     color: white;
     font-size: 4vmin;
-}
-
-#boxText{
-    font-size: 3vmin;
-}
-/* makes sure any hyperlink in a box is underlined*/
-#boxText a{
-    text-decoration: underline;
 }
 
 #welcome{
     margin-top: 10%;
     margin-bottom: 10%;
 }
-
-#mainImage{
-    width: 50%;
-    border-radius: 80px;
-}
-
+/* This makes the table hidden at first */
 #caloryTable{
     display: none;
+    font-family: Verdana,Tahoma, sans-serif;
 }
-/* classes */
+
+#strechInjury{
+    margin-left: none;
+    font-size: 2.3vw;
+}
+
+#footer{
+    font-size: 1vw;
+    text-align: center;
+}
+
+/* To the center the last text in the dietlist page*/
+#dietCenter{
+    font-size: 3vmin;
+    text-align: center;
+    text-decoration: underline;
+}
+/* CLASSES */
 .contentHeight{
     height: 80vh;
 }
-.bigSize{
+.headerSize{
     font-size: 4vw;
 }
 
@@ -100,8 +99,21 @@ ul{
     background-color: white;
 }
 
+/* Image classes */
+.mainImage{
+    width: 50%;
+    border-radius: 80px;
+}
+
+.image{
+    width: 90%;
+    border-radius: 80px;
+    overflow: auto;
+}
+/* Content for the white boxes*/
 .boxText{
     font-size: 3vmin;
+    text-align: justify;
 }
 /* makes sure any hyperlink in a box is underlined*/
 .boxText a{
@@ -142,8 +154,8 @@ ul{
 /* Fade in animation*/
 /* I got this from web3 school and edited it*/
 .animation{
-    -webkit-animation: fadein 3s;
-    animation: fadein 3s;
+    -webkit-animation: fadein 2s;
+    animation: fadein 2s;
 }
 @keyframes fadein {
     from { opacity: 0; }

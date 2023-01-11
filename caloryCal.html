@@ -14,6 +14,11 @@
                 let select = document.getElementById("activity");
                 let activeRate = select.options[select.selectedIndex].value
                 let amountCal = 0;
+                // Makes sure no negative values are entered
+                if (weight < 0 || height < 0 || age < 0){
+                    document.getElementById("result").innerHTML = "Positive values please! your not -5 years old!";
+                    return;
+                }
                 if (document.getElementById("male").checked == true){
                     amountCal = Math.round(activeRate * ((10 * weight) + (6.25 * height) - (5 * age) + 5))
                 }
@@ -28,6 +33,11 @@
                 document.getElementById("tablecon1").innerHTML = amountCal;
                 document.getElementById("tablecon2").innerHTML = amountCal - 500;
                 document.getElementById("tablecon3").innerHTML = amountCal + 500;
+
+                if (amountCal < 0){
+                    document.getElementById("result").innerHTML = `${amountCal}... I think you need to see a doctor.`;
+                }
+                return;
             }
         </script>
     </head>
@@ -60,7 +70,7 @@
             <div class="whiteLine"></div>
         </nav>
         <br>
-        <h1>Let's see how many calories you should have a day!</h1>
+        <h1 class="headerSize">Let's see how many calories you should have a day!</h1>
         <br>
         <div class="whitebox">
             <label for="age">Age</label>
@@ -91,8 +101,8 @@
             <h1 id="result"></h1>
         </div>
         <br>
-        <div id="caloryTable">
-            <table>
+        <div>
+            <table id="caloryTable">
                 <tr>
                     <th>Goal</th>
                     <th>Calories</th>
