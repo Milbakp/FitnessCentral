@@ -31,6 +31,9 @@ nav{
     top: 0;
     width: 100%;
     font-family: Tahoma, sans-serif;
+    /* Thank you StackOverflow! This makes it so the 
+    animation does not with the sticky navbar */
+    z-index: 1;
 }
 
 h1{
@@ -53,7 +56,7 @@ ul{
     color: white;
     font-size: 4vmin;
 }
-
+/* The id for the welcome sign in the index page */
 #welcome{
     margin-top: 10%;
     margin-bottom: 10%;
@@ -63,7 +66,7 @@ ul{
     display: none;
     font-family: Verdana,Tahoma, sans-serif;
 }
-
+/* The list for the strech page had to have a diffent font-size and style */
 #strechInjury{
     margin-left: none;
     font-size: 2.3vw;
@@ -84,6 +87,7 @@ ul{
 .contentHeight{
     height: 80vh;
 }
+
 .headerSize{
     font-size: 4vw;
 }
@@ -93,7 +97,7 @@ ul{
     border-radius: 25px;
     padding: 10px;
 }
-
+/* This class is used to create a white line from a div*/
 .whiteLine{
     height: 3px; 
     background-color: white;
@@ -115,12 +119,12 @@ ul{
     font-size: 3vmin;
     text-align: justify;
 }
-/* makes sure any hyperlink in a box is underlined*/
+/* Makes sure any hyperlink in a box is underlined*/
 .boxText a{
     text-decoration: underline;
 }
 
-/* I got this from W3 school*/
+/* I got this from W3 school it for dividing the content into columns and rows*/
 .column {
     flex: 50%;
     width: 50%;

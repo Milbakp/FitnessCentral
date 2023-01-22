@@ -20,6 +20,11 @@
                         document.getElementById("result").innerHTML = 'Please fill in all values!';
                         return;
                     }
+                // Makes sure there is no letters
+                if (weight === NaN || height === NaN || age === NaN){
+                        document.getElementById("result").innerHTML = 'No letters!';
+                        return;
+                    }
                 // Makes sure no negative values are entered
                 if (weight < 0 || height < 0 || age < 0){
                     document.getElementById("result").innerHTML = "Positive values please! your not -5 years old!";
@@ -80,6 +85,7 @@
         <h1 class="headerSize">Let's see how many calories you should have a day!</h1>
         <br>
         <div class="whitebox">
+            <!-- Asking for the values for the equation-->
             <label for="age">Age</label>
             <input type="text" id="age">
             <br>
@@ -108,6 +114,7 @@
             <h1 id="result"></h1>
         </div>
         <br>
+        <!-- The table for the information on calory need for a weight goal-->
         <div>
             <table id="caloryTable">
                 <tr>
