@@ -1,4 +1,6 @@
-/* Elements */
+/** Made by Muhammad Luqman Irfan Bin Ahmad Kamal Peong **/
+/** ID : 1221102096 **/
+/****** ELEMENTS ******/
 body{
     color: white;
     background-image: url("oldblackboard.jpg");
@@ -7,6 +9,7 @@ body{
     margin-left: 0;
     margin-right: 0;
 }
+
 input{
     margin: 1vw;
 }
@@ -17,6 +20,7 @@ table, th, td{
     border-collapse: collapse;
     padding: 1vw;
 }
+
 a{
     color: white;
     text-decoration: none;
@@ -25,6 +29,7 @@ a{
 span{
     color: white;
 }
+
 nav{
     background-color: black;
     position: sticky;
@@ -32,7 +37,8 @@ nav{
     width: 100%;
     font-family: Tahoma, sans-serif;
     /* Thank you StackOverflow! This makes it so the 
-    animation does not with the sticky navbar */
+    animation does not overlap with the sticky navbar. 
+    It works by prioritising the nav element over everything else */
     z-index: 1;
 }
 
@@ -47,25 +53,28 @@ ul{
     text-align: left;
     list-style-position: inside;
 }
-/**  Ids  **/
+
+/******  ID  ******/
 #navtext{
     font-size: 4vw;
 }
 
 #home{
-    color: white;
     font-size: 4vmin;
 }
-/* The id for the welcome sign in the index page */
+
+/* The id for the welcome sign in the index page, it spaces it out. */
 #welcome{
     margin-top: 10%;
     margin-bottom: 10%;
 }
+
 /* This makes the table hidden at first */
 #caloryTable{
     display: none;
     font-family: Verdana,Tahoma, sans-serif;
 }
+
 /* The list for the strech page had to have a diffent font-size and style */
 #strechInjury{
     margin-left: none;
@@ -83,7 +92,8 @@ ul{
     text-align: center;
     text-decoration: underline;
 }
-/* CLASSES */
+
+/****** CLASSES ******/
 .contentHeight{
     height: 80vh;
 }
@@ -114,49 +124,52 @@ ul{
     border-radius: 80px;
     overflow: auto;
 }
+
 /* Content for the white boxes*/
 .boxText{
     font-size: 3vmin;
     text-align: justify;
 }
+
 /* Makes sure any hyperlink in a box is underlined*/
 .boxText a{
     text-decoration: underline;
 }
 
-/* I got this from W3 school it for dividing the content into columns and rows*/
+/* I got this from W3 school, it's for dividing the content into columns and rows*/
 .column {
     flex: 50%;
     width: 50%;
     padding: 10px;
-  }
+}
 
-.row{
+.row {
     display: flex
-  }
+}
 
 
 /* This class for youtube videos was from stackoverflow*/
 .auto-resizable-iframe {
     max-width: 560px;
     margin: 0px auto;
-  }
+}
   
 .auto-resizable-iframe > div {
     position: relative;
     padding-bottom: 75%;
     height: 0px;
-  }
+}
+
 .auto-resizable-iframe iframe {
     position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
     height: 100%;
-  }
+}
 
-/* Fade in animation*/
-/* I got this from web3 school and edited it*/
+/* Fade in animation */
+/* I got this from W3 school and edited it*/
 .animation{
     -webkit-animation: fadein 2s;
     animation: fadein 2s;
@@ -175,9 +188,9 @@ ul{
 .dropdown {
     position: relative;
     display: inline-block;
-  }
+}
   
-  .dropdown-content {
+.dropdown-content {
     color: black !important;
     font-size: 2vw;
     display: none;
@@ -186,19 +199,20 @@ ul{
     min-width: 100%;
     padding: 12px 16px;
     z-index: 1;
-  }
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
+}
   
-  .dropdown-content a:hover {
+.dropdown-content a:hover {
     background-color: black;
     color: white;
-    }
+}
 
-  .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
-  }
+}
