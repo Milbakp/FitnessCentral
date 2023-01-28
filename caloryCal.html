@@ -5,23 +5,30 @@
         <title>Fitness Central - Calory Calculator</title>
         <script>
             // This calculates the amount of calories a person needs based on Mifflin-St Jeor Equation
-            // I got most of this information from calculator.net's calory calculator. I basically reversed engineer
+            // I got most of this information from calculator.net's calory calculator. I basically reversed engineered
             // their process.
             function caloryCal(){
-                let weight = parseFloat(document.getElementById("weight").value);
-                let height = parseFloat(document.getElementById("height").value);
-                let age = parseInt(document.getElementById("age").value);
+
+                let weight = document.getElementById("weight").value;
+                let height = document.getElementById("height").value;
+                let age = document.getElementById("age").value;
                 let select = document.getElementById("activity");
                 let activeRate = select.options[select.selectedIndex].value
                 let amountCal = 0;
-                // No null values
-                if (weight === null || height === null || age === null || 
-                    (document.getElementById("male").checked == false && document.getElementById("female").checked == false)){
-                        document.getElementById("result").innerHTML = 'Please fill in all values!';
-                        return;
-                    }
+                // No empty inputs.
+                if (weight === '' || height === '' || age === '' || 
+                (document.getElementById("male").checked == false && document.getElementById("female").checked == false)){
+                    document.getElementById("result").innerHTML = 'Please fill in all values!';
+                    return;
+                }
+
+                // Converts to appropriate data types.
+                weight = parseFloat(weight);
+                height = parseFloat(height);
+                age = parseInt(age);
+
                 // Makes sure there is no letters
-                if (weight === NaN || height === NaN || age === NaN){
+                if (isNaN(weight) || isNaN(height) || isNaN(age)){
                         document.getElementById("result").innerHTML = 'No letters!';
                         return;
                     }
